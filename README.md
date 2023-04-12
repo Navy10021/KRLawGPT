@@ -14,6 +14,7 @@
 
 ### 2. Model Usage
 
+
 #### STEP 1. Load Text data and Build vacab
 
 ```python
@@ -26,6 +27,7 @@ $ python model/vocab.py --using_LLMs = True
 ```
 This step creates a train.bin and val.bin in that data directory and builds a vocab. Now it is ready to train KRLawGPT model.
 
+
 #### STEP 2. Pre-train KRLawGPT on specific text data
 
 ```python
@@ -35,6 +37,8 @@ if you want to leverage already trained GPT's parameters and weights, you must s
 ```python
 $ python model/train.py --using_LLMs = True
 ```
+This step saves the best performance model in validation and creates KRLawGPT.pt and KRLawGPT_state_dict.pt in that output directory.
+
 
 #### STEP 3. Generate Legal Text
 
