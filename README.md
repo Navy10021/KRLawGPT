@@ -20,11 +20,11 @@
 $ python model/vocab.py
 ```
 
-if you want to utilze other GPT-based tokenizer, you must set both ```python --using_LLMs = True``` and ```python --reduce_size = True```.
+if you want to utilize other GPT-based tokenizers, you must set both ```--using_LLMs = True``` and ```--reduce_size = True```.
 ```python
 $ python model/vocab.py --using_LLMs = True --reduce_size = True
 ```
-This creates a train.bin and val.bin in that data directory. Now it is time to train KRLawGPT.
+This STEP creates a train.bin and val.bin in that data directory and builds a vocab. Now it is time to train KRLawGPT.
 
 #### STEP 2. Pre-train KRLawGPT on specific text data
 
