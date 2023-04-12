@@ -1,6 +1,6 @@
 ![header](https://capsule-render.vercel.app/api?type=wave&color=auto&height=300&section=header&text=KRLawGPT&fontSize=80)
 
-## KRLawGPT:Generative Pre-trained Transformer for producing Korean legal text
+### KRLawGPT : Generative Pre-trained Transformer for producing Korean Legal Text
 
 ### 1. Model Description
 
