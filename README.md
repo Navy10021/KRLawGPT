@@ -24,18 +24,22 @@ if you want to utilize other GPT-based tokenizers, you must set ```--using_LLMs 
 ```python
 $ python model/vocab.py --using_LLMs = True
 ```
-This STEP creates a train.bin and val.bin in that data directory and builds a vocab. Now it is time to train KRLawGPT.
+This step creates a train.bin and val.bin in that data directory and builds a vocab. Now it is ready to train KRLawGPT model.
 
 #### STEP 2. Pre-train KRLawGPT on specific text data
 
 ```python
 $ python model/train.py
 ```
+if you want to leverage already trained GPT's parameters and weights, you must set ```--using_LLMs = True```.
+```python
+$ python model/train.py --using_LLMs = True
+```
 
 #### STEP 3. Generate Legal Text
 
 ```python
-from models.generat_legal_text import *
+from model.generate_legal_text import *
 
 input_text = input(">> Enter your start prompt :")
 legal_text_generator(input_text)
