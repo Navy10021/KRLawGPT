@@ -16,6 +16,6 @@
 
 #### STEP 1. Load Text data and Build vacab
 
-#### STEP 2. Pre-train KRLawGPT on legal text data
+#### STEP 2. Pre-train KRLawGPT on specific text data
 
 #### STEP 3. Generate Legal Text
