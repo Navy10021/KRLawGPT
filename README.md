@@ -16,6 +16,15 @@
 
 #### STEP 1. Load Text data and Build vacab
 
+```python
+$ python model/vocab.py
+```
+
+
+```python
+$ python model/vocab.py --using_LLMs = True --reduce_size = True
+```
+
 #### STEP 2. Pre-train KRLawGPT on specific text data
 
 #### STEP 3. Generate Legal Text
