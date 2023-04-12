@@ -27,4 +27,17 @@ $ python model/vocab.py --using_LLMs = True --reduce_size = True
 
 #### STEP 2. Pre-train KRLawGPT on specific text data
 
+```python
+$ python model/train.py
+```
+
 #### STEP 3. Generate Legal Text
+
+```python
+from models.generat_legal_text import *
+
+input_text = input(">> Enter your start prompt :")
+legal_text_generator(input_text, using_LLMs = False)
+```
+
+Generation GIF
