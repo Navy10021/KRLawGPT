@@ -37,7 +37,7 @@ $ python model/train.py
 from models.generat_legal_text import *
 
 input_text = input(">> Enter your start prompt :")
-legal_text_generator(input_text, using_LLMs = False)
+legal_text_generator(input_text)
 ```
 
 Generation GIF
