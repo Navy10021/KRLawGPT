@@ -1,4 +1,4 @@
-![header](https://capsule-render.vercel.app/api?type=transparent&color=_custom_gradient&height=300&section=header&text=KRLawGPT&fontSize=80)
+![header](https://capsule-render.vercel.app/api?type=transparent&color=timeGradient&height=300&section=header&text=KRLawGPT&fontSize=80)
 
 ## Generative Pre-trained Transformer for producing Korean Legal Text
 
