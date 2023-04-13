@@ -58,4 +58,4 @@ legal_text_generator(input_text)
 
 ### 4. Dev
 - Seoul National University NLP Labs
-- Lee
+- Navy Lee
