@@ -35,9 +35,9 @@ This step creates a train.bin and val.bin in that 'data' directory and builds a 
 ```python
 $ python model/train.py
 ```
-If you want to leverage already trained GPT's parameters and weights from Hugging Face, you must set ```--using_LLMs = True``` and enter GPT-based pre-trained models name ```-model_type = 'kogpt' ```.
+If you want to leverage already trained GPT's parameters and weights from Hugging Face, you must set ```--using_LLMs = True``` and enter GPT-based pre-trained models name ```--model_type = 'kogpt' ```. Default is kogpt-2.
 ```python
-$ python model/train.py --using_LLMs = True
+$ python model/train.py --using_LLMs = True 
 ```
 This step saves the best performance model in validation dataset and creates KRLawGPT.pt and KRLawGPT_state_dict.pt in that 'output' directory. Now you can generate legal text with KRLawGPT.
 
