@@ -19,6 +19,7 @@
 
 #### STEP 1. Load Text data and Build vacab
 
+This step creates a split dataset (train.bin and val.bin) in that 'data' directory and builds a vocab. Then, it is ready to train KRLawGPT model.
 ```python
 $ python model/vocab.py
 ```
@@ -27,11 +28,11 @@ If you want to utilize other GPT-based tokenizers, you have to set ```--using_LL
 ```python
 $ python model/vocab.py --using_LLMs = True
 ```
-This step creates a train.bin and val.bin in that 'data' directory and builds a vocab. Then, it is ready to train KRLawGPT model.
 
 
 #### STEP 2. Pre-train KRLawGPT on specific text data
 
+This step saves the best performance model in validation dataset and creates KRLawGPT.pt and KRLawGPT_state_dict.pt in that 'output' directory. Now you can generate legal text with KRLawGPT.
 ```python
 $ python model/train.py
 ```
@@ -39,12 +40,11 @@ If you want to leverage already trained GPT's parameters and weights from Huggin
 ```python
 $ python model/train.py --using_LLMs = True 
 ```
-This step saves the best performance model in validation dataset and creates KRLawGPT.pt and KRLawGPT_state_dict.pt in that 'output' directory. Now you can generate legal text with KRLawGPT.
 
 
 #### STEP 3. Generate Legal Text
-Enter the short words or sentence you want to generate. When given even a small number of words, pre-trained KRLawGPT will write large volumes of relevant and sophisticated judges-like Korean legal text.
 
+Enter the short words or sentence you want to generate. When given even a small number of words, pre-trained KRLawGPT will write large volumes of relevant and sophisticated judges-like Korean legal text.
 ```python
 from model.generate_legal_text import *
 
