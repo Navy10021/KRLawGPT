@@ -1,5 +1,7 @@
 ![header](https://capsule-render.vercel.app/api?type=transparent&color=gradient&height=300&section=header&text=%20KRLawGPT%20&fontColor=317589&textBg=true&fontSize=100)
 
+	<img src="https://github-readme-stats.vercel.app/api?username=navy10021&show_icons=true">
+
 ## Generative Pre-trained Transformer for producing Korean Legal Text
 
 ### 1. Model Description
