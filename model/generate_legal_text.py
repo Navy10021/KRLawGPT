@@ -6,6 +6,13 @@ model = torch.load("./output" + "/KRLawGPT.pt")
 device = 'cuda' if torch.cuda.is_available() else 'cpu'
 
 def legal_text_generator(input_text, num_samples = 10, using_LLMs = False, max_new_tokens = 500, temperature = 0.8, top_k = 200):
+    """
+    input_text : short input text
+    using_LLMs : using Hugging Face based GPT models or not
+    max_new_tokens : the number of tokens generated in each input text
+    temperature : 1.0 = no change, < 1.0 = less random, > 1.0 = more random, in predictions
+    top_k : top K most likely tokens
+    """
     
     # 1.Tokenizer & Encoder & Decoder
     if using_LLMs:
