@@ -115,13 +115,13 @@ class Block(nn.Module):
 # Set hyper-parameters
 @dataclass
 class myGPTConfig:
-    block_size: int = 1024           # The maximum context legth for predictions
+    block_size: int = 1024           # maximum context legth for predictions
     vocab_size: int = 51200          # GPT-2 (50257) & KoGPT-2 (51200)
-    n_layer: int = 12
-    n_head: int = 12
-    n_embd: int = 768
-    dropout: float = 0.1
-    bias: bool = False
+    n_layer: int = 12                # number of layers
+    n_head: int = 12                 # number of head
+    n_embd: int = 768                # embedding dimension
+    dropout: float = 0.1             # dropout ratio
+    bias: bool = False               # using bias or not
 
 
 # GPT Language Model
@@ -262,7 +262,7 @@ class KRLawGPT(nn.Module):
         return idx
     
     
-    # Get pre-trained GPT models : gpt2, gpt3, kogpt2
+    # Get pre-trained GPT models : gpt2-based Hugging Face models or kogpt
     @classmethod
     def from_pretrained(cls, model_type, override_args = None):
         assert model_type in {'gpt2', 'gpt2-xl', 'skt/kogpt2-base-v2'}
