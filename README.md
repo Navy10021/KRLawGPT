@@ -39,11 +39,11 @@ If you want to leverage already trained GPT's parameters and weights from Huggin
 ```python
 $ python model/train.py --using_LLMs = True
 ```
-This step saves the best performance model in validation and creates KRLawGPT.pt and KRLawGPT_state_dict.pt in that 'output' directory.
+This step saves the best performance model in validation dataset and creates KRLawGPT.pt and KRLawGPT_state_dict.pt in that 'output' directory.
 
 
 #### STEP 3. Generate Legal Text
-Enter the short words or sentence you want to generate. When given even a small number of words, KRLawGPT will generate large volumes of relevant and sophisticated judges-like Korean legal text.
+Enter the short words or sentence you want to generate. When given even a small number of words, pre-trained KRLawGPT will generate large volumes of relevant and sophisticated judges-like Korean legal text.
 
 ```python
 from model.generate_legal_text import *
