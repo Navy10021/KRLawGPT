@@ -11,7 +11,7 @@
   Our model is built to be pre-trained with its own GPT model or to leverage tokenizers and parameters from other GPT-based PLMs (GPT-2/3, KoGPT, etc.).
  ***KRLawGPT*** was pre-trained on a large-scale Korean legal dataset called CKLC(Clean Korean Legal Corpus). When given a small amount of prompt, it will generate large volumes of relevant and sophisticated judges-like Korean legal text.
  
- Moreover, the ***KRLawGPT python code*** we provided is designed not only for Korean legal texts, but also for users to train and optimize any of their own text data to generate related texts.
+ Moreover, the ***KRLawGPT python code*** we provided is designed not only for Korean legal texts, but also for users to train and optimize any of user own text data to generate related texts.
 
 
 ### 2. Model Usage
