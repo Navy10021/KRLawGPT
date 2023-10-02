@@ -56,6 +56,6 @@ legal_text_generator(input_text)
 
 ![generation](https://user-images.githubusercontent.com/105137667/231640382-a7129aa7-bf06-4b29-b767-f1fc3b42ccb5.gif)
 
-### 4. Dev
+### 3. Dev
 - Seoul National University NLP Labs
 - Navy Lee
