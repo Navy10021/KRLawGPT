@@ -4,22 +4,25 @@
 
 ## Generative Pre-trained Transformer for producing Korean Legal Text
 
+### Abstract :
+In this work, we introduce the development and application of a **Generative Pre-trained Transformer (GPT)** tailored for producing Korean legal text, named ***KRLawGPT***. As a neural network-based language model, ***KRLawGPT*** is designed to generate expressive and relevant Korean legal text through a decoder-only transformer. This model is pre-trained on a comprehensive Korean legal dataset, CKLC (Clean Korean Legal Corpus), and is equipped to handle both natural language generation and natural language processing tasks. The thesis also outlines the model's adaptability for training on user-specific text data, broadening its utility beyond the realm of legal texts.
+
+
 ### 1. Model Description
 
- **Generative Pre-trained Transformer(GPT)** is a neural network-based language model trained on big data to produce human-like text. We have developed ***KRLawGPT*** specializes in legal texts. This language model uses a decoder-only transformer to generate expressive Korean legal text. ***KRLawGPT*** processes input text to perform both natural language generation and natural language processing to understand and generate legal text. 
- 
-  Our model is built to be pre-trained with its own GPT model or to leverage tokenizers and parameters from other GPT-based PLMs (GPT-2/3, KoGPT, etc.).
- ***KRLawGPT*** was pre-trained on a large-scale Korean legal dataset called CKLC(Clean Korean Legal Corpus). When given a small amount of prompt, it will generate large volumes of relevant and sophisticated judges-like Korean legal text.
- 
- Moreover, the ***KRLawGPT python code*** we provided is designed not only for Korean legal texts, but also for users to train and optimize any of user own text data to generate related texts.
+## 1.1. Generative Pre-trained Transformer (GPT) for Legal Texts
+ ***KRLawGPT*** is introduced as a language model specifically crafted for the generation of Korean legal text. Utilizing a decoder-only transformer, this model is trained on a large-scale legal dataset, CKLC, enabling it to generate human-like and sophisticated legal texts. ***KRLawGPT*** stands out for its capability to process input text, performing both natural language generation and processing tasks.
+
+## 1.2. Model Flexibility and Integration
+  The model is built with flexibility in mind, allowing users to either pre-train it with its own GPT model or leverage tokenizers and parameters from other GPT-based Pre-trained Language Models (PLMs) such as GPT-2/3 or KoGPT. Moreover, ***KRLawGPT*** supports training and optimization on user-provided text data, extending its functionality beyond the legal domain.
 
 
 ### 2. Model Usage
 
 
-#### STEP 1. Load Text data and Build vacab
+#### STEP 1. Loading Text Data and Building Vocabulary
 
-First step creates a split dataset (train.bin and val.bin) in that 'data' directory and builds a vocab. Then, it is ready to train KRLawGPT model.
+The initial step involves creating a split dataset (train.bin and val.bin) in the 'data' directory and building a vocabulary. Users can set options to utilize other GPT-based tokenizers for added versatility.
 ```python
 $ python model/vocab.py
 ```
@@ -30,9 +33,9 @@ $ python model/vocab.py --using_LLMs = True
 ```
 
 
-#### STEP 2. Pre-train KRLawGPT on specific text data
+#### STEP 2. Pre-training KRLawGPT on Specific Text Data
 
-This step saves the best performance model in validation dataset and creates KRLawGPT.pt and KRLawGPT_state_dict.pt in that 'output' directory. Now you can generate legal text with KRLawGPT.
+This step involves training the ***KRLawGPT*** model, saving the best-performing model on the validation dataset, and generating KRLawGPT.pt and KRLawGPT_state_dict.pt in the 'output' directory. Users have the option to leverage pre-trained models from Hugging Face by setting specific parameters.
 ```python
 $ python model/train.py
 ```
@@ -44,7 +47,7 @@ $ python model/train.py --using_LLMs = True --model_type = 'kogpt'
 
 #### STEP 3. Generate Legal Text
 
-Lastly, enter the short words or sentences you want to generate. When given even a small number of words, pre-trained KRLawGPT will write large volumes of relevant and sophisticated judges-like Korean legal text.
+Users can input short words or sentences to generate large volumes of relevant and sophisticated judges-like Korean legal text using the pre-trained ***KRLawGPT*** model.
 ```python
 from model.generate_legal_text import *
 
@@ -56,6 +59,6 @@ legal_text_generator(input_text)
 
 ![generation](https://user-images.githubusercontent.com/105137667/231640382-a7129aa7-bf06-4b29-b767-f1fc3b42ccb5.gif)
 
-### 3. Dev
+### 3. Development
 - Seoul National University NLP Labs
-- Navy Lee
+- Under the guidance of Navy Lee
