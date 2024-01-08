@@ -10,10 +10,10 @@ In this work, we introduce the development and application of a **Generative Pre
 
 ### 1. Model Description
 
-## 1.1. Generative Pre-trained Transformer (GPT) for Legal Texts
+#### 1.1. Generative Pre-trained Transformer (GPT) for Legal Texts
  ***KRLawGPT*** is introduced as a language model specifically crafted for the generation of Korean legal text. Utilizing a decoder-only transformer, this model is trained on a large-scale legal dataset, CKLC, enabling it to generate human-like and sophisticated legal texts. ***KRLawGPT*** stands out for its capability to process input text, performing both natural language generation and processing tasks.
 
-## 1.2. Model Flexibility and Integration
+#### 1.2. Model Flexibility and Integration
   The model is built with flexibility in mind, allowing users to either pre-train it with its own GPT model or leverage tokenizers and parameters from other GPT-based Pre-trained Language Models (PLMs) such as GPT-2/3 or KoGPT. Moreover, ***KRLawGPT*** supports training and optimization on user-provided text data, extending its functionality beyond the legal domain.
 
 
