@@ -55,10 +55,10 @@ input_text = input(">> Enter your start prompt :")
 legal_text_generator(input_text)
 ```
 
-#### Sample visualization
+### 3. Sample visualization
 
 ![generation](https://user-images.githubusercontent.com/105137667/231640382-a7129aa7-bf06-4b29-b767-f1fc3b42ccb5.gif)
 
-### 3. Development
+### 4. Development
 - Seoul National University NLP Labs
 - Under the guidance of Navy Lee
